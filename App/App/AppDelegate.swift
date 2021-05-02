@@ -6,14 +6,27 @@
 //
 
 import UIKit
+import Home
+import Login
+import Core
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+
+        let token: String? = UserDefaultHelper.shared.get(key: .userToken)
+        if token != nil {
+            HomeRouterImpl.navigateToModule()
+        } else {
+            LoginRouterImpl.navigateToModule()
+        }
+
         return true
     }
 

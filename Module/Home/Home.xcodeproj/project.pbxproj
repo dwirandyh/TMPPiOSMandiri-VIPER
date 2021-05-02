@@ -7,26 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1997D2263E74E900AA1F84 /* DashboardCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997D1263E74E900AA1F84 /* DashboardCellDelegate.swift */; };
+		8D1997D4263E768700AA1F84 /* HomePresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997D3263E768700AA1F84 /* HomePresenterImpl.swift */; };
+		8D1997D6263E768E00AA1F84 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997D5263E768E00AA1F84 /* HomePresenter.swift */; };
+		8D1997DA263E76EA00AA1F84 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997D9263E76EA00AA1F84 /* HomeInteractor.swift */; };
+		8D1997DC263E76F300AA1F84 /* HomeInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997DB263E76F300AA1F84 /* HomeInteractorImpl.swift */; };
+		8D1997DE263E771A00AA1F84 /* UserProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997DD263E771A00AA1F84 /* UserProfileEntity.swift */; };
+		8D1997E2263E773400AA1F84 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E1263E773400AA1F84 /* HomeRouter.swift */; };
+		8D1997E4263E795900AA1F84 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E3263E795900AA1F84 /* HomeView.swift */; };
+		8D1997E6263E7BB800AA1F84 /* HomeInteractorOuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */; };
+		8D48BAEE263D9160002C996E /* History.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BAED263D9160002C996E /* History.framework */; };
+		8D48BAEF263D9160002C996E /* History.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BAED263D9160002C996E /* History.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DEEA54A263D4C8B007D9E69 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEEA548263D4C8B007D9E69 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DEEA55B263D4CD0007D9E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA559263D4CD0007D9E69 /* HomeViewController.swift */; };
 		8DEEA55C263D4CD0007D9E69 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEEA55A263D4CD0007D9E69 /* HomeViewController.xib */; };
 		8DEEA569263D4E24007D9E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DEEA568263D4E24007D9E69 /* Assets.xcassets */; };
-		8DEEA56C263D50B4007D9E69 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA56B263D50B4007D9E69 /* HomeRouter.swift */; };
+		8DEEA56C263D50B4007D9E69 /* HomeRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA56B263D50B4007D9E69 /* HomeRouterImpl.swift */; };
 		8DEEA57C263D53C0007D9E69 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA57A263D53C0007D9E69 /* DashboardCell.swift */; };
 		8DEEA57D263D53C0007D9E69 /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEEA57B263D53C0007D9E69 /* DashboardCell.xib */; };
 		8DEEA580263D5412007D9E69 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA57F263D5412007D9E69 /* HomeDataSource.swift */; };
 		AC82AD6A36B883D9F663ACD2 /* Pods_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F11D76CC2666E7EF685758 /* Pods_Home.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8D48BAF0263D9160002C996E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8D48BAEF263D9160002C996E /* History.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		411B463134605C7C511523E3 /* Pods-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Home.debug.xcconfig"; path = "Target Support Files/Pods-Home/Pods-Home.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1997D1263E74E900AA1F84 /* DashboardCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCellDelegate.swift; sourceTree = "<group>"; };
+		8D1997D3263E768700AA1F84 /* HomePresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterImpl.swift; sourceTree = "<group>"; };
+		8D1997D5263E768E00AA1F84 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		8D1997D9263E76EA00AA1F84 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		8D1997DB263E76F300AA1F84 /* HomeInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorImpl.swift; sourceTree = "<group>"; };
+		8D1997DD263E771A00AA1F84 /* UserProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileEntity.swift; sourceTree = "<group>"; };
+		8D1997E1263E773400AA1F84 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		8D1997E3263E795900AA1F84 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorOuput.swift; sourceTree = "<group>"; };
+		8D48BAED263D9160002C996E /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEEA545263D4C8B007D9E69 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEEA548263D4C8B007D9E69 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		8DEEA549263D4C8B007D9E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DEEA559263D4CD0007D9E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8DEEA55A263D4CD0007D9E69 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		8DEEA568263D4E24007D9E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8DEEA56B263D50B4007D9E69 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		8DEEA56B263D50B4007D9E69 /* HomeRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterImpl.swift; sourceTree = "<group>"; };
 		8DEEA57A263D53C0007D9E69 /* DashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
 		8DEEA57B263D53C0007D9E69 /* DashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
 		8DEEA57F263D5412007D9E69 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
@@ -40,6 +75,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC82AD6A36B883D9F663ACD2 /* Pods_Home.framework in Frameworks */,
+				8D48BAEE263D9160002C996E /* History.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +85,7 @@
 		1A3906E8356192B454F04C25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D48BAED263D9160002C996E /* History.framework */,
 				C4F11D76CC2666E7EF685758 /* Pods_Home.framework */,
 			);
 			name = Frameworks;
@@ -62,6 +99,33 @@
 			);
 			name = Pods;
 			path = ../../App/Pods;
+			sourceTree = "<group>";
+		};
+		8D1997D7263E76D800AA1F84 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8D1997DD263E771A00AA1F84 /* UserProfileEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		8D1997D8263E76DE00AA1F84 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8D1997D9263E76EA00AA1F84 /* HomeInteractor.swift */,
+				8D1997DB263E76F300AA1F84 /* HomeInteractorImpl.swift */,
+				8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8D48BB18263D9809002C996E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8D1997D3263E768700AA1F84 /* HomePresenterImpl.swift */,
+				8D1997D5263E768E00AA1F84 /* HomePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		8DEEA53B263D4C8B007D9E69 = {
@@ -85,6 +149,9 @@
 		8DEEA547263D4C8B007D9E69 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				8D1997D7263E76D800AA1F84 /* Entity */,
+				8D1997D8263E76DE00AA1F84 /* Interactor */,
+				8D48BB18263D9809002C996E /* Presenter */,
 				8DEEA558263D4CC3007D9E69 /* Router */,
 				8DEEA557263D4CC0007D9E69 /* View */,
 				8DEEA548263D4C8B007D9E69 /* Home.h */,
@@ -106,7 +173,8 @@
 		8DEEA558263D4CC3007D9E69 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				8DEEA56B263D50B4007D9E69 /* HomeRouter.swift */,
+				8D1997E1263E773400AA1F84 /* HomeRouter.swift */,
+				8DEEA56B263D50B4007D9E69 /* HomeRouterImpl.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -117,6 +185,7 @@
 				8DEEA559263D4CD0007D9E69 /* HomeViewController.swift */,
 				8DEEA57F263D5412007D9E69 /* HomeDataSource.swift */,
 				8DEEA55A263D4CD0007D9E69 /* HomeViewController.xib */,
+				8D1997E3263E795900AA1F84 /* HomeView.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -124,18 +193,11 @@
 		8DEEA577263D539D007D9E69 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				8DEEA578263D53A4007D9E69 /* DashboardCell */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		8DEEA578263D53A4007D9E69 /* DashboardCell */ = {
-			isa = PBXGroup;
-			children = (
+				8D1997D1263E74E900AA1F84 /* DashboardCellDelegate.swift */,
 				8DEEA57A263D53C0007D9E69 /* DashboardCell.swift */,
 				8DEEA57B263D53C0007D9E69 /* DashboardCell.xib */,
 			);
-			path = DashboardCell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +223,7 @@
 				8DEEA541263D4C8B007D9E69 /* Sources */,
 				8DEEA542263D4C8B007D9E69 /* Frameworks */,
 				8DEEA543263D4C8B007D9E69 /* Resources */,
+				8D48BAF0263D9160002C996E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,9 +309,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D1997D6263E768E00AA1F84 /* HomePresenter.swift in Sources */,
+				8D1997E2263E773400AA1F84 /* HomeRouter.swift in Sources */,
+				8D1997E4263E795900AA1F84 /* HomeView.swift in Sources */,
+				8D1997D2263E74E900AA1F84 /* DashboardCellDelegate.swift in Sources */,
+				8D1997D4263E768700AA1F84 /* HomePresenterImpl.swift in Sources */,
+				8D1997DA263E76EA00AA1F84 /* HomeInteractor.swift in Sources */,
 				8DEEA57C263D53C0007D9E69 /* DashboardCell.swift in Sources */,
 				8DEEA55B263D4CD0007D9E69 /* HomeViewController.swift in Sources */,
-				8DEEA56C263D50B4007D9E69 /* HomeRouter.swift in Sources */,
+				8D1997DC263E76F300AA1F84 /* HomeInteractorImpl.swift in Sources */,
+				8D1997E6263E7BB800AA1F84 /* HomeInteractorOuput.swift in Sources */,
+				8D1997DE263E771A00AA1F84 /* UserProfileEntity.swift in Sources */,
+				8DEEA56C263D50B4007D9E69 /* HomeRouterImpl.swift in Sources */,
 				8DEEA580263D5412007D9E69 /* HomeDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

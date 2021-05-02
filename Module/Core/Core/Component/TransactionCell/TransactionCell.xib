@@ -84,6 +84,11 @@
                 </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="Nbq-vk-iRi" id="tQJ-Nj-ww3"/>
+                <outlet property="nameLabel" destination="7S7-4v-gYt" id="g0A-gQ-Mb2"/>
+                <outlet property="typeLabel" destination="gNf-DA-KHZ" id="BKc-6e-4e5"/>
+            </connections>
             <point key="canvasLocation" x="244.20289855072465" y="131.25"/>
         </tableViewCell>
     </objects>

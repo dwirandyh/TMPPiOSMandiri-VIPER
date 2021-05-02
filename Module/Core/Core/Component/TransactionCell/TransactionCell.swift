@@ -9,15 +9,19 @@ import UIKit
 
 public class TransactionCell: UITableViewCell {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+
     public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    public override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    public func showData(transaction: TransactionEntity) {
+        self.nameLabel.text = transaction.name
+        self.typeLabel.text = transaction.type
+        self.amountLabel.text = "Rp\(transaction.amount)"
     }
     
 }

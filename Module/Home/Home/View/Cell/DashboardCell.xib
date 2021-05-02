@@ -127,19 +127,22 @@
                         <color key="textColor" red="0.39136180279999999" green="0.39142239089999997" blue="0.39134854079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See all" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-aX-f4q">
-                        <rect key="frame" x="475" y="361.5" width="44" height="17"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                        <color key="textColor" red="0.38685199619999999" green="0.47531986240000001" blue="0.95615762469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mH-vw-lfT">
+                        <rect key="frame" x="476" y="355.5" width="43" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="See all">
+                            <color key="titleColor" red="0.40275019410000001" green="0.46977812050000001" blue="0.92553442720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <connections>
+                            <action selector="showTransactionAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CHf-Wo-fbH"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="P44-Fx-ptI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4eP-yK-LSm"/>
                     <constraint firstItem="7fq-am-r41" firstAttribute="top" secondItem="qXx-Dn-tN0" secondAttribute="bottom" constant="8" id="5o9-GM-Jgw"/>
                     <constraint firstAttribute="trailing" secondItem="P44-Fx-ptI" secondAttribute="trailing" constant="16" id="88W-BI-ODm"/>
-                    <constraint firstAttribute="trailing" secondItem="wMY-aX-f4q" secondAttribute="trailing" constant="16" id="Al8-S9-mzn"/>
                     <constraint firstItem="0CY-tT-Vbt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IY7-bX-sBv"/>
                     <constraint firstAttribute="bottom" secondItem="0CY-tT-Vbt" secondAttribute="bottom" constant="24.5" id="J6F-62-EDO"/>
                     <constraint firstItem="P44-Fx-ptI" firstAttribute="top" secondItem="Ad8-dU-ueo" secondAttribute="bottom" constant="31" id="N0c-wM-mWX"/>
@@ -148,8 +151,9 @@
                     <constraint firstItem="7fq-am-r41" firstAttribute="leading" secondItem="Ad8-dU-ueo" secondAttribute="trailing" constant="20" id="ZgJ-2A-XDc"/>
                     <constraint firstItem="qXx-Dn-tN0" firstAttribute="leading" secondItem="Ad8-dU-ueo" secondAttribute="trailing" constant="20" id="c8u-xW-kNG"/>
                     <constraint firstItem="oU0-es-XCZ" firstAttribute="top" secondItem="P44-Fx-ptI" secondAttribute="bottom" constant="30" id="dE2-p0-Y7y"/>
-                    <constraint firstItem="wMY-aX-f4q" firstAttribute="centerY" secondItem="0CY-tT-Vbt" secondAttribute="centerY" id="eg6-Qz-Wqy"/>
+                    <constraint firstAttribute="trailing" secondItem="1mH-vw-lfT" secondAttribute="trailing" constant="16" id="jVZ-YS-8gu"/>
                     <constraint firstAttribute="trailing" secondItem="OjS-DG-aJf" secondAttribute="trailing" constant="16" id="mck-MN-ShQ"/>
+                    <constraint firstItem="1mH-vw-lfT" firstAttribute="centerY" secondItem="0CY-tT-Vbt" secondAttribute="centerY" id="mwB-vz-gex"/>
                     <constraint firstAttribute="trailing" secondItem="oU0-es-XCZ" secondAttribute="trailing" constant="16" id="oDM-Dm-Ag6"/>
                     <constraint firstItem="qXx-Dn-tN0" firstAttribute="top" secondItem="Ad8-dU-ueo" secondAttribute="top" id="pUr-kF-ae7"/>
                     <constraint firstItem="Ad8-dU-ueo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="pVU-2s-Qz3"/>
@@ -159,6 +163,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" red="0.97949236630000003" green="0.98965221640000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="balanceLabel" destination="Rp8-JQ-7OE" id="foh-Sv-yuF"/>
+                <outlet property="nameLabel" destination="7fq-am-r41" id="q2j-a7-vUW"/>
+                <outlet property="phoneNumberLabel" destination="Zbp-fT-a6c" id="tIH-m1-9XL"/>
+            </connections>
             <point key="canvasLocation" x="277.536231884058" y="233.37053571428569"/>
         </tableViewCell>
     </objects>

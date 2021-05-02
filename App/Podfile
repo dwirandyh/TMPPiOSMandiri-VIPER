@@ -23,3 +23,7 @@ target 'Home' do
   project '../Module/Home/Home'
 
 end
+
+target 'History' do
+  project '../Module/History/History'
+end

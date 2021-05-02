@@ -8,6 +8,7 @@
 import UIKit
 import Login
 import Home
+import Core
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -22,7 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = scene
-        HomeRouter.navigateToModule(window: window)
+        
+        let token: String? = UserDefaultHelper.shared.get(key: .userToken)
+        if token != nil {
+            HomeRouterImpl.navigateToModule()
+        } else {
+            LoginRouterImpl.navigateToModule()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
