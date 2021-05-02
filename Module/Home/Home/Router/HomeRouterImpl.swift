@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import History
+import Core
 
 public class HomeRouterImpl {
 
@@ -15,8 +16,10 @@ public class HomeRouterImpl {
         let bundle = Bundle(identifier: "com.casestudy.Home")
         let vc = HomeViewController(nibName: "HomeViewController", bundle: bundle)
 
+        let networkManager = NetworkManagerImpl()
+
         let router = HomeRouterImpl()
-        let interactor = HomeInteractorImpl()
+        let interactor = HomeInteractorImpl(networkManager: networkManager)
         let presenter = HomePresenterImpl(view: vc, interactor: interactor, router: router)
 
         interactor.interactorOutput = presenter

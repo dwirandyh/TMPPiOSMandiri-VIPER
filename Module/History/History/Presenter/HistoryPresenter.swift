@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 protocol HistoryPresenter {
+    func loadHistory()
     func dismiss(viewController: UIViewController)
 }

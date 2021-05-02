@@ -13,7 +13,7 @@ class HomeDataSource: NSObject, UITableViewDataSource {
 
     var viewController: HomeViewController!
 
-    var userProfile: UserProfileEntity = UserProfileEntity(name: "", balance: 0, phoneNumber: "")
+    var userProfile: UserProfileEntity = UserProfileEntity(name: "", balance: 0, phoneNumber: "", imageUrl: "")
     var transactions: [TransactionEntity] = []
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

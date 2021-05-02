@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoginPresenter {
-    func login(username: String, password: String)
+    func login(email: String, password: String)
 }

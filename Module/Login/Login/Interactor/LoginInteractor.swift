@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoginInteractor {
-    func postLoginData(username: String, password: String)
+    func postLoginData(email: String, password: String)
 }

@@ -9,9 +9,9 @@ import Foundation
 
 class LoginPresenterImpl: LoginPresenter {
 
-    var view: LoginView
-    var interactor: LoginInteractor
-    var router: LoginRouter
+    let view: LoginView
+    let interactor: LoginInteractor
+    let router: LoginRouter
 
     init(view: LoginView, interactor: LoginInteractor, router: LoginRouter) {
         self.view = view
@@ -19,8 +19,8 @@ class LoginPresenterImpl: LoginPresenter {
         self.router = router
     }
 
-    func login(username: String, password: String) {
-        self.interactor.postLoginData(username: username, password: password)
+    func login(email: String, password: String) {
+        self.interactor.postLoginData(email: email, password: password)
     }
 
 }

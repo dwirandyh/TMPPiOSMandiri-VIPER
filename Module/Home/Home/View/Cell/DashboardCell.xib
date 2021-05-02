@@ -167,6 +167,7 @@
                 <outlet property="balanceLabel" destination="Rp8-JQ-7OE" id="foh-Sv-yuF"/>
                 <outlet property="nameLabel" destination="7fq-am-r41" id="q2j-a7-vUW"/>
                 <outlet property="phoneNumberLabel" destination="Zbp-fT-a6c" id="tIH-m1-9XL"/>
+                <outlet property="profileImage" destination="Ad8-dU-ueo" id="x2d-fy-MsL"/>
             </connections>
             <point key="canvasLocation" x="277.536231884058" y="233.37053571428569"/>
         </tableViewCell>

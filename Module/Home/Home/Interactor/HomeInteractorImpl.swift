@@ -12,18 +12,31 @@ class HomeInteractorImpl: HomeInteractor {
 
     var interactorOutput: HomeInteractorOutput?
 
+    let networkManager: NetworkManager
+
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
+    }
+
     func getUserProfile() {
-        let userProfile = UserProfileEntity(name: "John Doe", balance: 1500000, phoneNumber: "+628999083243")
-        self.interactorOutput?.loadedUserProfileData(userProfile: userProfile)
+        self.networkManager.getBalance { (data, error) in
+            if let balance = data {
+                let userProfile = UserProfileEntity(name: balance.name, balance: balance.balance, phoneNumber: balance.phone, imageUrl: "http://3.84.177.160:8000\(balance.image)")
+                self.interactorOutput?.loadedUserProfileData(userProfile: userProfile)
+            }
+        }
     }
 
     func getTransaction() {
-        let transactions: [TransactionEntity] = [
-            TransactionEntity(name: "Samuel", type: "Transafer", imageUrl: "", amount: 55000),
-            TransactionEntity(name: "Netflix", type: "Subscription", imageUrl: "", amount: 49000)
-        ]
-        self.interactorOutput?.loadedTransaction(transactions: transactions)
-    }
+        self.networkManager.getTodayInvoice { (data, error) in
+            var transactions: [TransactionEntity] = []
 
+            data?.forEach({ (invoiceData) in
+                transactions.append(TransactionEntity(name: invoiceData.name, type: invoiceData.type, imageUrl: "http://3.84.177.160:8000\(invoiceData.image)", amount: invoiceData.amount, notes: invoiceData.notes))
+
+                self.interactorOutput?.loadedTransaction(transactions: transactions)
+            })
+        }
+    }
 
 }

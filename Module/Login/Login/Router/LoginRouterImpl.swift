@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Home
+import Core
 
 public class LoginRouterImpl {
 
@@ -15,8 +16,10 @@ public class LoginRouterImpl {
         let bundle = Bundle(identifier: "com.casestudy.Login")
         let vc = LoginViewController(nibName: "LoginViewController", bundle: bundle)
 
+        let networkManager = NetworkManagerImpl()
+
         let router = LoginRouterImpl()
-        let interactor = LoginInteractorImpl()
+        let interactor = LoginInteractorImpl(networkManager: networkManager)
         let presenter = LoginPresenterImpl(view: vc, interactor: interactor, router: router)
 
         interactor.interactorOuput = presenter

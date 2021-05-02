@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Core
 
 public class HistoryRouterImpl {
     
@@ -14,7 +15,14 @@ public class HistoryRouterImpl {
         let bundle = Bundle(identifier: "com.casestudy.History")
         let vc = HistoryViewController(nibName: "HistoryViewController", bundle: bundle)
         vc.modalPresentationStyle = .fullScreen
-        vc.presenter = HistoryPresenterImpl(interactor: HistoryInteractorImpl(), router: HistoryRouterImpl())
+
+        let networkManager = NetworkManagerImpl()
+        let router = HistoryRouterImpl()
+        let interactor = HistoryInteractorImpl(networkManager: networkManager)
+        let presenter = HistoryPresenterImpl(view: vc, interactor: interactor, router: router)
+
+        interactor.interactorOutput = presenter
+        vc.presenter = presenter
 
         viewController.present(vc, animated: true, completion: nil)
     }

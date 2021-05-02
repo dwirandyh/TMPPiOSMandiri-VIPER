@@ -7,18 +7,31 @@
 
 import Foundation
 import UIKit
+import Core
 
 class HistoryPresenterImpl: HistoryPresenter {
 
-    var interactor: HistoryInteractor
-    var router: HistoryRouter
+    let view: HistoryView
+    let interactor: HistoryInteractor
+    let router: HistoryRouter
 
-    init(interactor: HistoryInteractor, router: HistoryRouter) {
+    init(view: HistoryView, interactor: HistoryInteractor, router: HistoryRouter) {
+        self.view = view
         self.interactor = interactor
         self.router = router
     }
 
+    func loadHistory() {
+        self.interactor.getHistory()
+    }
+
     func dismiss(viewController: UIViewController) {
         self.router.dismissPage(viewController: viewController)
+    }
+}
+
+extension HistoryPresenterImpl: HistoryInteractorOutput {
+    func loadedHistory(transaction: [TransactionEntity]) {
+        self.view.showTransaction(transaction: transaction)
     }
 }

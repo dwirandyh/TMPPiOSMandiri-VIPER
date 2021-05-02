@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 public class TransactionCell: UITableViewCell {
 
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var noteLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
 
     public override func awakeFromNib() {
@@ -20,8 +22,18 @@ public class TransactionCell: UITableViewCell {
 
     public func showData(transaction: TransactionEntity) {
         self.nameLabel.text = transaction.name
-        self.typeLabel.text = transaction.type
-        self.amountLabel.text = "Rp\(transaction.amount)"
+        self.noteLabel.text = transaction.notes
+
+        if transaction.type == "in" {
+            self.amountLabel.text = "+Rp\(transaction.amount)"
+            self.amountLabel.textColor = #colorLiteral(red: 0.1176470588, green: 0.7568627451, blue: 0.3725490196, alpha: 1)
+        } else {
+            self.amountLabel.text = "-Rp\(transaction.amount)"
+            self.amountLabel.textColor = #colorLiteral(red: 1, green: 0.3568627451, blue: 0.2156862745, alpha: 1)
+        }
+
+        let url = URL(string: transaction.imageUrl)
+        self.userImage.kf.setImage(with: url)
     }
     
 }

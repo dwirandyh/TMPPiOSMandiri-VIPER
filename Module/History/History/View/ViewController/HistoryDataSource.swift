@@ -7,41 +7,33 @@
 
 import Foundation
 import UIKit
+import Core
 
 class HistoryDataSource: NSObject, UITableViewDataSource {
 
-    var weekTransactions: [Int] = [0, 1]
-    var monthTransaction: [Int] = [0, 1, 2, 3, 4]
+    var transaction: [TransactionEntity] = []
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 2
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
-        } else if section == 1 {
-            return self.weekTransactions.count
-        } else if section == 2 {
-            return 1
         } else {
-            return self.monthTransaction.count
+            return self.transaction.count
         }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
-            cell.setTitle(title: "This Week")
-            return cell
-        } else if indexPath.section == 1 {
-            return tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath)
-        } else if indexPath.section == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell", for: indexPath) as! HeaderCell
-            cell.setTitle(title: "This Month")
+            cell.setTitle(title: "All Transaction")
             return cell
         } else {
-            return tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath) as! TransactionCell
+            cell.showData(transaction: self.transaction[indexPath.row])
+            return cell
         }
     }
 

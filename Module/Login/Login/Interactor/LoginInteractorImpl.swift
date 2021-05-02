@@ -6,16 +6,25 @@
 //
 
 import Foundation
+import Core
 
 class LoginInteractorImpl: LoginInteractor {
 
     var interactorOuput: LoginInteractorOutput?
+    let networkManager: NetworkManager
 
-    func postLoginData(username: String, password: String) {
-        if username == "dwirandyh" && password == "12345" {
-            self.interactorOuput?.authenticationResult(isSuccess: true)
-        } else {
-            self.interactorOuput?.authenticationResult(isSuccess: false)
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
+    }
+
+    func postLoginData(email: String, password: String) {
+        self.networkManager.login(email: email, password: password) { data, error in
+            if let loginData = data {
+                UserDefaultHelper.shared.set(key: .userToken, value: loginData.token)
+                self.interactorOuput?.authenticationResult(isSuccess: true)
+            } else {
+                self.interactorOuput?.authenticationResult(isSuccess: false)
+            }
         }
     }
 }

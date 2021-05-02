@@ -18,6 +18,8 @@
 		8D1997E6263E7BB800AA1F84 /* HomeInteractorOuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */; };
 		8D48BAEE263D9160002C996E /* History.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BAED263D9160002C996E /* History.framework */; };
 		8D48BAEF263D9160002C996E /* History.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BAED263D9160002C996E /* History.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8D61780C263EDE5200FAE5A6 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D61780B263EDE5200FAE5A6 /* Core.framework */; };
+		8D61780D263EDE5200FAE5A6 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D61780B263EDE5200FAE5A6 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DEEA54A263D4C8B007D9E69 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEEA548263D4C8B007D9E69 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DEEA55B263D4CD0007D9E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEEA559263D4CD0007D9E69 /* HomeViewController.swift */; };
 		8DEEA55C263D4CD0007D9E69 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEEA55A263D4CD0007D9E69 /* HomeViewController.xib */; };
@@ -37,6 +39,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8D48BAEF263D9160002C996E /* History.framework in Embed Frameworks */,
+				8D61780D263EDE5200FAE5A6 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +58,7 @@
 		8D1997E3263E795900AA1F84 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorOuput.swift; sourceTree = "<group>"; };
 		8D48BAED263D9160002C996E /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D61780B263EDE5200FAE5A6 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEEA545263D4C8B007D9E69 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEEA548263D4C8B007D9E69 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		8DEEA549263D4C8B007D9E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC82AD6A36B883D9F663ACD2 /* Pods_Home.framework in Frameworks */,
+				8D61780C263EDE5200FAE5A6 /* Core.framework in Frameworks */,
 				8D48BAEE263D9160002C996E /* History.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +90,7 @@
 		1A3906E8356192B454F04C25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D61780B263EDE5200FAE5A6 /* Core.framework */,
 				8D48BAED263D9160002C996E /* History.framework */,
 				C4F11D76CC2666E7EF685758 /* Pods_Home.framework */,
 			);
@@ -463,7 +469,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Home/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +498,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Home/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

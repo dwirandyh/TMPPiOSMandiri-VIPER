@@ -11,4 +11,5 @@ struct UserProfileEntity {
     var name: String
     var balance: Int
     var phoneNumber: String
+    var imageUrl: String
 }

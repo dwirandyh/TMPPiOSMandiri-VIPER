@@ -11,7 +11,7 @@ import Core
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var usernameText: UITextField!
+    @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
 
     var presenter: LoginPresenter?
@@ -21,10 +21,10 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginAction(_ sender: Any) {
-        let username: String = usernameText.text ?? ""
+        let email: String = emailText.text ?? ""
         let password: String = passwordText.text ?? ""
 
-        self.presenter?.login(username: username, password: password)
+        self.presenter?.login(email: email, password: password)
     }
 }
 

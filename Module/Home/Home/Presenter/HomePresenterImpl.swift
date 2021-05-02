@@ -11,10 +11,9 @@ import Core
 
 class HomePresenterImpl: HomePresenter {
 
-    var view: HomeView
-    var interactor: HomeInteractor
-    var router: HomeRouter
-
+    let view: HomeView
+    let interactor: HomeInteractor
+    let router: HomeRouter
 
     init(view: HomeView, interactor: HomeInteractor, router: HomeRouter) {
         self.view = view

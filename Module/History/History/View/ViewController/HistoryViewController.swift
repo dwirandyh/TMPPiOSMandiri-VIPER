@@ -6,12 +6,13 @@
 //
 
 import UIKit
+import Core
 
 class HistoryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    var dataSource = HistoryDataSource()
+    let dataSource = HistoryDataSource()
 
     var presenter: HistoryPresenter?
 
@@ -19,6 +20,8 @@ class HistoryViewController: UIViewController {
         super.viewDidLoad()
 
         self.setupTableView()
+
+        self.presenter?.loadHistory()
     }
 
     func setupTableView() {
@@ -30,5 +33,12 @@ class HistoryViewController: UIViewController {
 
     @IBAction func backButtonAction(_ sender: Any) {
         self.presenter?.dismiss(viewController: self)
+    }
+}
+
+extension HistoryViewController: HistoryView {
+    func showTransaction(transaction: [TransactionEntity]) {
+        self.dataSource.transaction = transaction
+        self.tableView.reloadData()
     }
 }
