@@ -20,9 +20,9 @@
 		8D617878263EE96300FAE5A6 /* GetBalanceDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D617877263EE96300FAE5A6 /* GetBalanceDataResponse.swift */; };
 		8D61787C263EEF7000FAE5A6 /* GetInvoiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61787B263EEF7000FAE5A6 /* GetInvoiceResponse.swift */; };
 		8D61787F263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61787E263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift */; };
-		8DE011A5263D3A2100BED729 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE011A4263D3A2100BED729 /* NetworkService.swift */; };
 		8DE011C0263D442A00BED729 /* ZWalletButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE011BF263D442A00BED729 /* ZWalletButton.swift */; };
 		8DE011C4263D471800BED729 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE011C3263D471800BED729 /* UIViewExtension.swift */; };
+		8DE0C0CD263EFCC8002AAD98 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0C0CC263EFCC8002AAD98 /* IntExtension.swift */; };
 		8DF46BBE263D5B9900382B14 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF46BBC263D5B9900382B14 /* TransactionCell.swift */; };
 		8DF46BBF263D5B9900382B14 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DF46BBD263D5B9900382B14 /* TransactionCell.xib */; };
 		8DF46BC2263D5BEA00382B14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF46BC1263D5BEA00382B14 /* Assets.xcassets */; };
@@ -48,9 +48,9 @@
 		8D617877263EE96300FAE5A6 /* GetBalanceDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBalanceDataResponse.swift; sourceTree = "<group>"; };
 		8D61787B263EEF7000FAE5A6 /* GetInvoiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInvoiceResponse.swift; sourceTree = "<group>"; };
 		8D61787E263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInvoiceDataResponse.swift; sourceTree = "<group>"; };
-		8DE011A4263D3A2100BED729 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8DE011BF263D442A00BED729 /* ZWalletButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZWalletButton.swift; sourceTree = "<group>"; };
 		8DE011C3263D471800BED729 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		8DE0C0CC263EFCC8002AAD98 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		8DF46BBC263D5B9900382B14 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		8DF46BBD263D5B9900382B14 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
 		8DF46BC1263D5BEA00382B14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE011C3263D471800BED729 /* UIViewExtension.swift */,
+				8DE0C0CC263EFCC8002AAD98 /* IntExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -138,7 +139,6 @@
 				8DE011BE263D441900BED729 /* Component */,
 				8D5F1D55263D385D0027B199 /* Core.h */,
 				8D5F1D56263D385D0027B199 /* Info.plist */,
-				8DE011A4263D3A2100BED729 /* NetworkService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -342,10 +342,10 @@
 				8D48BB25263D9A69002C996E /* UserDefaultHelper.swift in Sources */,
 				8D61783F263EE32100FAE5A6 /* NetworkManagerImpl.swift in Sources */,
 				8D61783C263EE28700FAE5A6 /* LoginResponse.swift in Sources */,
-				8DE011A5263D3A2100BED729 /* NetworkService.swift in Sources */,
 				8D1997EB263E7F8C00AA1F84 /* TransactionEntity.swift in Sources */,
 				8D6177FF263EDDF300FAE5A6 /* LoginDataResponse.swift in Sources */,
 				8DF46BBE263D5B9900382B14 /* TransactionCell.swift in Sources */,
+				8DE0C0CD263EFCC8002AAD98 /* IntExtension.swift in Sources */,
 				8DE011C0263D442A00BED729 /* ZWalletButton.swift in Sources */,
 				8D61787F263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift in Sources */,
 				8D617878263EE96300FAE5A6 /* GetBalanceDataResponse.swift in Sources */,

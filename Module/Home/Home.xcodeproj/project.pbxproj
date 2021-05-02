@@ -59,6 +59,10 @@
 		8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorOuput.swift; sourceTree = "<group>"; };
 		8D48BAED263D9160002C996E /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D61780B263EDE5200FAE5A6 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB0559C263EFEE7002C1ECC /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DB0559F263EFFAC002C1ECC /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD49E22263F0239004F700F /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DD49E39263F039E004F700F /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEEA545263D4C8B007D9E69 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DEEA548263D4C8B007D9E69 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		8DEEA549263D4C8B007D9E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +94,10 @@
 		1A3906E8356192B454F04C25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DD49E39263F039E004F700F /* Login.framework */,
+				8DD49E22263F0239004F700F /* Login.framework */,
+				8DB0559F263EFFAC002C1ECC /* Login.framework */,
+				8DB0559C263EFEE7002C1ECC /* Login.framework */,
 				8D61780B263EDE5200FAE5A6 /* Core.framework */,
 				8D48BAED263D9160002C996E /* History.framework */,
 				C4F11D76CC2666E7EF685758 /* Pods_Home.framework */,

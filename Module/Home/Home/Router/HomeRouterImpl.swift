@@ -37,5 +37,8 @@ extension HomeRouterImpl: HomeRouter {
     func navigateToHistory(viewController: UIViewController) {
         HistoryRouterImpl.navigateToModule(viewController: viewController)
     }
-    
+
+    func navigateToLogin() {
+        NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
+    }
 }

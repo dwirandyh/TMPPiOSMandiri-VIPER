@@ -17,13 +17,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="535" height="405"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell" translatesAutoresizingMaskIntoConstraints="NO" id="OjS-DG-aJf">
-                        <rect key="frame" x="491" y="28" width="28" height="28"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="28" id="ey7-8o-fMg"/>
-                            <constraint firstAttribute="width" constant="28" id="vZP-Lq-7WU"/>
-                        </constraints>
-                    </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-dU-ueo">
                         <rect key="frame" x="16" y="16" width="52" height="52"/>
                         <constraints>
@@ -43,6 +36,16 @@
                         <color key="textColor" red="0.56470757719999998" green="0.5722810626" blue="0.58041626209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdJ-00-l9x">
+                        <rect key="frame" x="448" y="26" width="51" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="Logout">
+                            <color key="titleColor" red="0.40275019410000001" green="0.46977812050000001" blue="0.92553442720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <connections>
+                            <action selector="logoutAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="raz-iS-s7j"/>
+                        </connections>
+                    </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P44-Fx-ptI" userLabel="Balance View">
                         <rect key="frame" x="16" y="99" width="503" height="133"/>
                         <subviews>
@@ -151,13 +154,13 @@
                     <constraint firstItem="7fq-am-r41" firstAttribute="leading" secondItem="Ad8-dU-ueo" secondAttribute="trailing" constant="20" id="ZgJ-2A-XDc"/>
                     <constraint firstItem="qXx-Dn-tN0" firstAttribute="leading" secondItem="Ad8-dU-ueo" secondAttribute="trailing" constant="20" id="c8u-xW-kNG"/>
                     <constraint firstItem="oU0-es-XCZ" firstAttribute="top" secondItem="P44-Fx-ptI" secondAttribute="bottom" constant="30" id="dE2-p0-Y7y"/>
+                    <constraint firstItem="gdJ-00-l9x" firstAttribute="centerY" secondItem="Ad8-dU-ueo" secondAttribute="centerY" id="g15-qf-83R"/>
                     <constraint firstAttribute="trailing" secondItem="1mH-vw-lfT" secondAttribute="trailing" constant="16" id="jVZ-YS-8gu"/>
-                    <constraint firstAttribute="trailing" secondItem="OjS-DG-aJf" secondAttribute="trailing" constant="16" id="mck-MN-ShQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gdJ-00-l9x" secondAttribute="trailing" constant="16" id="mIT-17-aJH"/>
                     <constraint firstItem="1mH-vw-lfT" firstAttribute="centerY" secondItem="0CY-tT-Vbt" secondAttribute="centerY" id="mwB-vz-gex"/>
                     <constraint firstAttribute="trailing" secondItem="oU0-es-XCZ" secondAttribute="trailing" constant="16" id="oDM-Dm-Ag6"/>
                     <constraint firstItem="qXx-Dn-tN0" firstAttribute="top" secondItem="Ad8-dU-ueo" secondAttribute="top" id="pUr-kF-ae7"/>
                     <constraint firstItem="Ad8-dU-ueo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="pVU-2s-Qz3"/>
-                    <constraint firstItem="OjS-DG-aJf" firstAttribute="centerY" secondItem="Ad8-dU-ueo" secondAttribute="centerY" id="vTK-X9-7ZC"/>
                     <constraint firstItem="Ad8-dU-ueo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vVA-zQ-dOK"/>
                 </constraints>
             </tableViewCellContentView>
@@ -174,7 +177,6 @@
     </objects>
     <resources>
         <image name="arrow-up" width="28" height="28"/>
-        <image name="bell" width="28" height="28"/>
         <image name="profile" width="52" height="52"/>
     </resources>
 </document>

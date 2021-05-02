@@ -8,13 +8,13 @@
       location = "group:../Module/Core/Core.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Module/Login/Login.xcodeproj">
+      location = "group:../Module/History/History.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../Module/Home/Home.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Module/History/History.xcodeproj">
+      location = "group:../Module/Login/Login.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

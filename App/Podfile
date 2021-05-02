@@ -12,6 +12,7 @@ end
 target 'App' do
 
   pod 'Moya'
+  pod 'netfox'
   common_dependency
 end
 

@@ -10,7 +10,7 @@ import UIKit
 import Core
 
 class HomePresenterImpl: HomePresenter {
-
+    
     let view: HomeView
     let interactor: HomeInteractor
     let router: HomeRouter
@@ -33,6 +33,11 @@ class HomePresenterImpl: HomePresenter {
         self.interactor.getTransaction()
     }
 
+    func logout() {
+        UserDefaultHelper.shared.remove(key: .userToken)
+        self.router.navigateToLogin()
+    }
+
 }
 
 extension HomePresenterImpl: HomeInteractorOutput {
@@ -43,6 +48,5 @@ extension HomePresenterImpl: HomeInteractorOutput {
     func loadedTransaction(transactions: [TransactionEntity]) {
         self.view.showTransactionData(transactions: transactions)
     }
-
 
 }

@@ -54,4 +54,8 @@ extension HomeViewController: DashboardCellDelegate {
     func showAllTransaction() {
         self.presenter?.showHistory(viewController: self)
     }
+
+    func logout() {
+        self.presenter?.logout()
+    }
 }

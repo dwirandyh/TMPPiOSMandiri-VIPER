@@ -9,6 +9,7 @@ import UIKit
 import Home
 import Login
 import Core
+import netfox
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,16 +19,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
 
+        // Start Netfox for debugging only
+        #if DEBUG
+            NFX.sharedInstance().start()
+        #endif
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
 
+        self.logout()
+
+        NotificationCenter.default.addObserver(self, selector: #selector(self.logout), name: Notification.Name("logout") , object: nil)
+        
+        return true
+    }
+
+    @objc func logout() {
         let token: String? = UserDefaultHelper.shared.get(key: .userToken)
         if token != nil {
             HomeRouterImpl.navigateToModule()
         } else {
             LoginRouterImpl.navigateToModule()
         }
-
-        return true
     }
 
     // MARK: UISceneSession Lifecycle

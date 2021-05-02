@@ -24,7 +24,7 @@ class DashboardCell: UITableViewCell {
 
     func showData(userProfile: UserProfileEntity) {
         self.nameLabel.text = userProfile.name
-        self.balanceLabel.text = "Rp\(userProfile.balance)"
+        self.balanceLabel.text = userProfile.balance.formatToIdr()
         self.phoneNumberLabel.text = userProfile.phoneNumber
 
         let url = URL(string: userProfile.imageUrl)
@@ -33,5 +33,9 @@ class DashboardCell: UITableViewCell {
 
     @IBAction func showTransactionAction(_ sender: Any) {
         self.delegate?.showAllTransaction()
+    }
+
+    @IBAction func logoutAction(_ sender: Any) {
+        self.delegate?.logout()
     }
 }

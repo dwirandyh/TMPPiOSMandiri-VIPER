@@ -5,22 +5,26 @@ PODS:
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
     - Alamofire (~> 5.0)
+  - netfox (1.19.0)
 
 DEPENDENCIES:
   - Kingfisher
   - Moya
+  - netfox
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
     - Moya
+    - netfox
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   Kingfisher: f5d8d60a0ef3edd642fd781bae60918599901aff
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  netfox: efeec1d23406df6cd605212f09a40957bb5654eb
 
-PODFILE CHECKSUM: 570a7a2bd9821b7575f4af0a85071b6f26086479
+PODFILE CHECKSUM: 11ca4f3086434a028ce866988deb08a9eaa266e0
 
 COCOAPODS: 1.10.0
