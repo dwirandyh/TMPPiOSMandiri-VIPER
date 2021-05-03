@@ -25,12 +25,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = scene
 
-        self.logout()
+        self.reloadRootView()
 
-        NotificationCenter.default.addObserver(self, selector: #selector(self.logout), name: Notification.Name("logout") , object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadRootView), name: Notification.Name("logout") , object: nil)
     }
 
-    @objc func logout() {
+    @objc func reloadRootView() {
         let token: String? = UserDefaultHelper.shared.get(key: .userToken)
         if token != nil {
             HomeRouterImpl.navigateToModule()

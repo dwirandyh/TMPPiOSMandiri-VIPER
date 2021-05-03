@@ -23,7 +23,7 @@ class HistoryInteractorImpl: HistoryInteractor {
             var transactions: [TransactionEntity] = []
 
             data?.forEach({ (invoiceData) in
-                transactions.append(TransactionEntity(name: invoiceData.name, type: invoiceData.type, imageUrl: "http://3.84.177.160:8000\(invoiceData.image)", amount: invoiceData.amount, notes: invoiceData.notes))
+                transactions.append(TransactionEntity(name: invoiceData.name, type: invoiceData.type, imageUrl: "\(AppConstant.baseUrl)\(invoiceData.image)", amount: invoiceData.amount, notes: invoiceData.notes))
 
                 self.interactorOutput?.loadedHistory(transaction: transactions)
             })

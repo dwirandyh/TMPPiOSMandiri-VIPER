@@ -15,8 +15,6 @@
 		8D19980D263E815D00AA1F84 /* LoginInteractorOuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19980C263E815D00AA1F84 /* LoginInteractorOuput.swift */; };
 		8D19980F263E820600AA1F84 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19980E263E820600AA1F84 /* LoginView.swift */; };
 		8D199811263E82BC00AA1F84 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D199810263E82BC00AA1F84 /* LoginRouter.swift */; };
-		8D48BB2C263D9EEC002C996E /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BB2B263D9EEC002C996E /* Home.framework */; };
-		8D48BB2D263D9EEC002C996E /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BB2B263D9EEC002C996E /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DE01193263D39AB00BED729 /* Login.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE01191263D39AB00BED729 /* Login.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DE011A1263D3A0300BED729 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE011A0263D3A0300BED729 /* Core.framework */; };
 		8DE011A2263D3A0300BED729 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE011A0263D3A0300BED729 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -33,7 +31,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8DE011A2263D3A0300BED729 /* Core.framework in Embed Frameworks */,
-				8D48BB2D263D9EEC002C996E /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +65,6 @@
 			files = (
 				79C4E11CF649D9EDED6FC117 /* Pods_Login.framework in Frameworks */,
 				8DE011A1263D3A0300BED729 /* Core.framework in Frameworks */,
-				8D48BB2C263D9EEC002C996E /* Home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

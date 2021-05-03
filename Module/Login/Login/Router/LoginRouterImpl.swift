@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import Home
 import Core
 
 public class LoginRouterImpl {
@@ -35,7 +34,7 @@ public class LoginRouterImpl {
 extension LoginRouterImpl: LoginRouter {
 
     func navigateToHome(window: UIWindow?) {
-        HomeRouterImpl.navigateToModule()
+        NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
     }
 
 }

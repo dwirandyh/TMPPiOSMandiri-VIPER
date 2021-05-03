@@ -9,10 +9,6 @@ import Foundation
 
 public class UserDefaultHelper {
 
-    public enum Key: String {
-        case userToken
-    }
-
     public static var shared: UserDefaultHelper = UserDefaultHelper()
 
     var defaults = UserDefaults.standard
@@ -27,6 +23,12 @@ public class UserDefaultHelper {
 
     public func remove(key: UserDefaultHelper.Key) {
         self.defaults.removeObject(forKey: key.rawValue)
+    }
+}
+
+public extension UserDefaultHelper {
+    enum Key: String {
+        case userToken
     }
 }
 

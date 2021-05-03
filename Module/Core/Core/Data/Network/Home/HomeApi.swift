@@ -40,7 +40,7 @@ extension HomeApi: TargetType {
     }
 
     public var baseURL: URL {
-        return URL(string: "http://3.84.177.160:8000")!
+        return URL(string: AppConstant.baseUrl)!
     }
 
     public var method: Moya.Method {
