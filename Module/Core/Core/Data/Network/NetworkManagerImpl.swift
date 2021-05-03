@@ -52,7 +52,7 @@ public class NetworkManagerImpl: NetworkManager {
 
     public func getTodayInvoice(completion: @escaping ([GetInvoiceDataResponse]?, Error?) -> ()) {
         let provider = MoyaProvider<HomeApi>()
-        provider.request(.getTodayInvoice) { response in
+        provider.request(.getThisWeekInvoice) { response in
             switch response {
             case .success(let result):
                 let decoder = JSONDecoder()

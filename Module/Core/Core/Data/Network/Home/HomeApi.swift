@@ -10,7 +10,7 @@ import Moya
 
 public enum HomeApi {
     case getBalance
-    case getTodayInvoice
+    case getThisWeekInvoice
     case getAllInvoice
 }
 
@@ -19,7 +19,7 @@ extension HomeApi: TargetType {
         switch self {
         case .getBalance:
             return "/home/getBalance"
-        case .getTodayInvoice, .getAllInvoice:
+        case .getThisWeekInvoice, .getAllInvoice:
             return "/home/getAllInvoice"
         }
     }
@@ -32,8 +32,8 @@ extension HomeApi: TargetType {
         switch self {
         case .getBalance:
             return .requestPlain
-        case .getTodayInvoice:
-            return .requestParameters(parameters: ["today": true], encoding: URLEncoding.queryString)
+        case .getThisWeekInvoice:
+            return .requestParameters(parameters: ["thisweek": true], encoding: URLEncoding.queryString)
         case .getAllInvoice:
             return .requestPlain
         }
