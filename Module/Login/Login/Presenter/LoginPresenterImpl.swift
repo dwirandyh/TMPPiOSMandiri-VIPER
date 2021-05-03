@@ -28,7 +28,7 @@ class LoginPresenterImpl: LoginPresenter {
 extension LoginPresenterImpl: LoginInteractorOutput {
     func authenticationResult(isSuccess: Bool) {
         if isSuccess {
-            self.router.navigateToHome(window: nil)
+            self.router.navigateToHome()
         } else {
             self.view.showError()
         }

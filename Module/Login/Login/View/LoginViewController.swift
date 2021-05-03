@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Home
 import Core
 
 class LoginViewController: UIViewController {

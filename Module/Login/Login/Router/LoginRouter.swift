@@ -6,8 +6,7 @@
 //
 
 import Foundation
-import UIKit
 
 protocol LoginRouter {
-    func navigateToHome(window: UIWindow?)
+    func navigateToHome()
 }

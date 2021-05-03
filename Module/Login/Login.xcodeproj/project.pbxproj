@@ -49,6 +49,7 @@
 		8D19980E263E820600AA1F84 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8D199810263E82BC00AA1F84 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		8D48BB2B263D9EEC002C996E /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D8502992640333200F210B5 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE0118E263D39AB00BED729 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE01191263D39AB00BED729 /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		8DE01192263D39AB00BED729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		7015E93BACB3A627AC284508 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D8502992640333200F210B5 /* Home.framework */,
 				8D48BB2B263D9EEC002C996E /* Home.framework */,
 				8DE011A0263D3A0300BED729 /* Core.framework */,
 				27C61A106544D0D892726C2F /* Pods_Login.framework */,

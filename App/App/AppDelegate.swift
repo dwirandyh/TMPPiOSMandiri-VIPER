@@ -6,9 +6,6 @@
 //
 
 import UIKit
-import Home
-import Login
-import Core
 import netfox
 
 @main
@@ -23,24 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
             NFX.sharedInstance().start()
         #endif
-
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-
-        // Handle Screen for iOS < 13.0
-        self.reloadRootView()
-
-        NotificationCenter.default.addObserver(self, selector: #selector(self.reloadRootView), name: Notification.Name("logout") , object: nil)
         
         return true
-    }
-
-    @objc func reloadRootView() {
-        let token: String? = UserDefaultHelper.shared.get(key: .userToken)
-        if token != nil {
-            HomeRouterImpl.navigateToModule()
-        } else {
-            LoginRouterImpl.navigateToModule()
-        }
     }
 
     // MARK: UISceneSession Lifecycle

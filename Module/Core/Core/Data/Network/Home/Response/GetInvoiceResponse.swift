@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GetInvoiceResponse: Codable {
+public struct GetInvoiceResponse: Codable {
     var status: Int
     var message: String
     var data: [GetInvoiceDataResponse]

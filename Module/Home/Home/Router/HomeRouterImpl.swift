@@ -39,6 +39,6 @@ extension HomeRouterImpl: HomeRouter {
     }
 
     func navigateToLogin() {
-        NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name("reloadRootView"), object: nil)
     }
 }

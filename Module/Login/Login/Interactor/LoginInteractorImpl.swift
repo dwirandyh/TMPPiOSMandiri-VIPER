@@ -18,11 +18,15 @@ class LoginInteractorImpl: LoginInteractor {
     }
 
     func postLoginData(email: String, password: String) {
+        // hit api login dengan mengirimkan email dan password
         self.networkManager.login(email: email, password: password) { data, error in
             if let loginData = data {
+                // menyimpan user token ke UserDefault
                 UserDefaultHelper.shared.set(key: .userToken, value: loginData.token)
+                // memberitahukan ke presenter jika proses berhasil
                 self.interactorOuput?.authenticationResult(isSuccess: true)
             } else {
+                // memberitahukan ke presenter jika proses berhasilsc
                 self.interactorOuput?.authenticationResult(isSuccess: false)
             }
         }

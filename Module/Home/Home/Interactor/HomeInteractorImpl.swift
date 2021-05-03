@@ -28,7 +28,7 @@ class HomeInteractorImpl: HomeInteractor {
     }
 
     func getTransaction() {
-        self.networkManager.getTodayInvoice { (data, error) in
+        self.networkManager.getThisWeekInvoice { (data, error) in
             var transactions: [TransactionEntity] = []
 
             data?.forEach({ (invoiceData) in

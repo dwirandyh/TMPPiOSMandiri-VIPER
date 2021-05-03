@@ -27,7 +27,10 @@ extension AuthApi: TargetType {
     public var task: Task {
         switch self {
         case .login(let email, let password):
-            return .requestParameters(parameters: ["email": email, "password": password], encoding: JSONEncoding.default)
+            return .requestParameters(
+                parameters: ["email": email, "password": password],
+                encoding: JSONEncoding.default
+            )
         }
     }
 

@@ -50,7 +50,7 @@ public class NetworkManagerImpl: NetworkManager {
         }
     }
 
-    public func getTodayInvoice(completion: @escaping ([GetInvoiceDataResponse]?, Error?) -> ()) {
+    public func getThisWeekInvoice(completion: @escaping ([GetInvoiceDataResponse]?, Error?) -> ()) {
         let provider = MoyaProvider<HomeApi>()
         provider.request(.getThisWeekInvoice) { response in
             switch response {

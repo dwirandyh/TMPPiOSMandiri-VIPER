@@ -33,8 +33,8 @@ public class LoginRouterImpl {
 
 extension LoginRouterImpl: LoginRouter {
 
-    func navigateToHome(window: UIWindow?) {
-        NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
+    func navigateToHome() {
+        NotificationCenter.default.post(name: Notification.Name("reloadRootView"), object: nil)
     }
 
 }

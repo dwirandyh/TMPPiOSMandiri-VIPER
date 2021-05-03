@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GetBalanceResponse: Codable {
+public struct GetBalanceResponse: Codable {
     var status: Int
     var message: String
     var data: [GetBalanceDataResponse]
