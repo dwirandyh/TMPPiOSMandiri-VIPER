@@ -45,6 +45,8 @@
 		8D1F9346263D368300244B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D1F9349263D368300244B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1F934B263D368300244B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D45E58726540F2800CC750A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		8D45E58826540F3400CC750A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8D48BB28263D9B9B002C996E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8502DD264035B600F210B5 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAF54EA26403AF500CF67CB /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 		8D1F933C263D368200244B6C /* App */ = {
 			isa = PBXGroup;
 			children = (
+				8D45E58626540EBF00CC750A /* Configuration */,
 				8D1F933D263D368200244B6C /* AppDelegate.swift */,
 				8D1F933F263D368200244B6C /* SceneDelegate.swift */,
 				8D1F9346263D368300244B6C /* Assets.xcassets */,
@@ -122,6 +125,15 @@
 				8D1F934B263D368300244B6C /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		8D45E58626540EBF00CC750A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8D45E58726540F2800CC750A /* Debug.xcconfig */,
+				8D45E58826540F3400CC750A /* Release.xcconfig */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +271,7 @@
 /* Begin XCBuildConfiguration section */
 		8D1F934C263D368300244B6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D45E58726540F2800CC750A /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -320,6 +333,7 @@
 		};
 		8D1F934D263D368300244B6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D45E58826540F3400CC750A /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

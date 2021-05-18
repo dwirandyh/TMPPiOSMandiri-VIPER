@@ -8,19 +8,15 @@
 import Foundation
 import Moya
 
-public enum HomeApi {
+public enum BalanceApi {
     case getBalance
-    case getThisWeekInvoice
-    case getAllInvoice
 }
 
-extension HomeApi: TargetType {
+extension BalanceApi: TargetType {
     public var path: String {
         switch self {
         case .getBalance:
             return "/home/getBalance"
-        case .getThisWeekInvoice, .getAllInvoice:
-            return "/home/getAllInvoice"
         }
     }
 
@@ -31,10 +27,6 @@ extension HomeApi: TargetType {
     public var task: Task {
         switch self {
         case .getBalance:
-            return .requestPlain
-        case .getThisWeekInvoice:
-            return .requestParameters(parameters: ["thisweek": true], encoding: URLEncoding.queryString)
-        case .getAllInvoice:
             return .requestPlain
         }
     }

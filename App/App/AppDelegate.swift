@@ -6,7 +6,10 @@
 //
 
 import UIKit
+
+#if DEBUG
 import netfox
+#endif
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
