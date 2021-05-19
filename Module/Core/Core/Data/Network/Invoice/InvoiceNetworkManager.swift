@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+public protocol InvoiceNetworkManager {
+    func getThisWeekInvoice(completion: @escaping ([GetInvoiceDataResponse]?, Error?) -> ())
+    func getAllInvoice(completion: @escaping ([GetInvoiceDataResponse]?, Error?) -> ())
+}

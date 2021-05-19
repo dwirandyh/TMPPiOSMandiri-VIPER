@@ -16,7 +16,7 @@ public class HistoryRouterImpl {
         let vc = HistoryViewController(nibName: "HistoryViewController", bundle: bundle)
         vc.modalPresentationStyle = .fullScreen
 
-        let networkManager = NetworkManagerImpl()
+        let networkManager = InvoiceNetworkManagerImpl()
         let router = HistoryRouterImpl()
         let interactor = HistoryInteractorImpl(networkManager: networkManager)
         let presenter = HistoryPresenterImpl(view: vc, interactor: interactor, router: router)

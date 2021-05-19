@@ -12,14 +12,16 @@ class HomeInteractorImpl: HomeInteractor {
 
     var interactorOutput: HomeInteractorOutput?
 
-    let networkManager: NetworkManager
+    let balanceNetworkManager: BalanceNetworkManager
+    let invoiceNetworkManager: InvoiceNetworkManager
 
-    init(networkManager: NetworkManager) {
-        self.networkManager = networkManager
+    init(balanceNetworkManager: BalanceNetworkManager, invoiceNetworkManager: InvoiceNetworkManager) {
+        self.balanceNetworkManager = balanceNetworkManager
+        self.invoiceNetworkManager = invoiceNetworkManager
     }
 
     func getUserProfile() {
-        self.networkManager.getBalance { (data, error) in
+        self.balanceNetworkManager.getBalance { (data, error) in
             if let balance = data {
                 let userProfile = UserProfileEntity(name: balance.name, balance: balance.balance, phoneNumber: balance.phone, imageUrl: "\(AppConstant.baseUrl)\(balance.image)")
                 self.interactorOutput?.loadedUserProfileData(userProfile: userProfile)
@@ -28,7 +30,7 @@ class HomeInteractorImpl: HomeInteractor {
     }
 
     func getTransaction() {
-        self.networkManager.getThisWeekInvoice { (data, error) in
+        self.invoiceNetworkManager.getThisWeekInvoice { (data, error) in
             var transactions: [TransactionEntity] = []
 
             data?.forEach({ (invoiceData) in

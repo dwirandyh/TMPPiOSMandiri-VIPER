@@ -11,15 +11,15 @@ import Core
 class LoginInteractorImpl: LoginInteractor {
 
     var interactorOuput: LoginInteractorOutput?
-    let networkManager: NetworkManager
+    let authNetworkManager: AuthNetworkManger
 
-    init(networkManager: NetworkManager) {
-        self.networkManager = networkManager
+    init(networkManager: AuthNetworkManger) {
+        self.authNetworkManager = networkManager
     }
 
     func postLoginData(email: String, password: String) {
         // hit api login dengan mengirimkan email dan password
-        self.networkManager.login(email: email, password: password) { data, error in
+        self.authNetworkManager.login(email: email, password: password) { data, error in
             if let loginData = data {
                 // menyimpan user token ke UserDefault
                 UserDefaultHelper.shared.set(key: .userToken, value: loginData.token)

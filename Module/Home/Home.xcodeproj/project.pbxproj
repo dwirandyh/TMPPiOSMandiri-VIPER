@@ -16,8 +16,6 @@
 		8D1997E2263E773400AA1F84 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E1263E773400AA1F84 /* HomeRouter.swift */; };
 		8D1997E4263E795900AA1F84 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E3263E795900AA1F84 /* HomeView.swift */; };
 		8D1997E6263E7BB800AA1F84 /* HomeInteractorOuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997E5263E7BB800AA1F84 /* HomeInteractorOuput.swift */; };
-		8D48BAEE263D9160002C996E /* History.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BAED263D9160002C996E /* History.framework */; };
-		8D48BAEF263D9160002C996E /* History.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D48BAED263D9160002C996E /* History.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D61780C263EDE5200FAE5A6 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D61780B263EDE5200FAE5A6 /* Core.framework */; };
 		8D61780D263EDE5200FAE5A6 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D61780B263EDE5200FAE5A6 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DEEA54A263D4C8B007D9E69 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DEEA548263D4C8B007D9E69 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8D48BAEF263D9160002C996E /* History.framework in Embed Frameworks */,
 				8D61780D263EDE5200FAE5A6 /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -84,7 +81,6 @@
 			files = (
 				AC82AD6A36B883D9F663ACD2 /* Pods_Home.framework in Frameworks */,
 				8D61780C263EDE5200FAE5A6 /* Core.framework in Frameworks */,
-				8D48BAEE263D9160002C996E /* History.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

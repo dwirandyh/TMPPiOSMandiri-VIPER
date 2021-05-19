@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import History
 import Core
 
 public class HomeRouterImpl {
@@ -16,10 +15,11 @@ public class HomeRouterImpl {
         let bundle = Bundle(identifier: "com.casestudy.Home")
         let vc = HomeViewController(nibName: "HomeViewController", bundle: bundle)
 
-        let networkManager = NetworkManagerImpl()
+        let balanceNetworkManager = BalanceNetworkManagerImpl()
+        let invoiceNetworkManager = InvoiceNetworkManagerImpl()
 
         let router = HomeRouterImpl()
-        let interactor = HomeInteractorImpl(networkManager: networkManager)
+        let interactor = HomeInteractorImpl(balanceNetworkManager: balanceNetworkManager, invoiceNetworkManager: invoiceNetworkManager)
         let presenter = HomePresenterImpl(view: vc, interactor: interactor, router: router)
 
         interactor.interactorOutput = presenter
@@ -35,7 +35,7 @@ public class HomeRouterImpl {
 extension HomeRouterImpl: HomeRouter {
 
     func navigateToHistory(viewController: UIViewController) {
-        HistoryRouterImpl.navigateToModule(viewController: viewController)
+        AppRouter.shared.navigateToHistory(viewController)
     }
 
     func navigateToLogin() {

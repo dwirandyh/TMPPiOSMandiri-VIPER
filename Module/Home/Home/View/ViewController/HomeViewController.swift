@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import History
 import Core
 
 class HomeViewController: UIViewController {
@@ -36,6 +35,17 @@ class HomeViewController: UIViewController {
 
 }
 
+extension HomeViewController: DashboardCellDelegate {
+    func showAllTransaction() {
+        self.presenter?.showHistory(viewController: self)
+    }
+
+    func logout() {
+        self.presenter?.logout()
+    }
+}
+
+
 extension HomeViewController: HomeView {
 
     func showUserProfileData(userProfile: UserProfileEntity) {
@@ -50,12 +60,3 @@ extension HomeViewController: HomeView {
     
 }
 
-extension HomeViewController: DashboardCellDelegate {
-    func showAllTransaction() {
-        self.presenter?.showHistory(viewController: self)
-    }
-
-    func logout() {
-        self.presenter?.logout()
-    }
-}

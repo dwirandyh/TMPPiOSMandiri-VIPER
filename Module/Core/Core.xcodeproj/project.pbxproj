@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8D1997EB263E7F8C00AA1F84 /* TransactionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1997EA263E7F8C00AA1F84 /* TransactionEntity.swift */; };
+		8D45E57E2654026B00CC750A /* BalanceNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45E57D2654026B00CC750A /* BalanceNetworkManagerImpl.swift */; };
+		8D45E5842654058600CC750A /* TransactionEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D45E5832654058600CC750A /* TransactionEntity.swift */; };
 		8D48BB25263D9A69002C996E /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48BB24263D9A69002C996E /* UserDefaultHelper.swift */; };
 		8D5F1D57263D385D0027B199 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5F1D55263D385D0027B199 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D6177F4263EDA5400FAE5A6 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6177F3263EDA5400FAE5A6 /* AuthApi.swift */; };
 		8D6177FF263EDDF300FAE5A6 /* LoginDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6177FE263EDDF300FAE5A6 /* LoginDataResponse.swift */; };
-		8D617825263EDFE300FAE5A6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D617824263EDFE300FAE5A6 /* NetworkManager.swift */; };
 		8D61783C263EE28700FAE5A6 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61783B263EE28700FAE5A6 /* LoginResponse.swift */; };
-		8D61783F263EE32100FAE5A6 /* NetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61783E263EE32100FAE5A6 /* NetworkManagerImpl.swift */; };
-		8D617870263EE8C000FAE5A6 /* HomeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61786F263EE8C000FAE5A6 /* HomeApi.swift */; };
 		8D617874263EE95900FAE5A6 /* GetBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D617873263EE95900FAE5A6 /* GetBalanceResponse.swift */; };
 		8D617878263EE96300FAE5A6 /* GetBalanceDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D617877263EE96300FAE5A6 /* GetBalanceDataResponse.swift */; };
 		8D61787C263EEF7000FAE5A6 /* GetInvoiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61787B263EEF7000FAE5A6 /* GetInvoiceResponse.swift */; };
 		8D61787F263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D61787E263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift */; };
 		8D7210F1263FB29D009C05B1 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7210F0263FB29D009C05B1 /* AppConstant.swift */; };
+		8D7F561626554A5B004E2905 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F561526554A5B004E2905 /* AppRouter.swift */; };
+		8DCBD0A3265376F9000F72DB /* BalanceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0A2265376F9000F72DB /* BalanceApi.swift */; };
+		8DCBD0A726537771000F72DB /* InvoiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0A626537771000F72DB /* InvoiceApi.swift */; };
+		8DCBD0AC265377ED000F72DB /* InvoiceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0AB265377ED000F72DB /* InvoiceNetworkManager.swift */; };
+		8DCBD0AF26537812000F72DB /* InvoiceNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0AE26537812000F72DB /* InvoiceNetworkManagerImpl.swift */; };
+		8DCBD0B226537932000F72DB /* BalanceNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0B126537932000F72DB /* BalanceNetworkManager.swift */; };
+		8DCBD0B526537BDC000F72DB /* AuthNetworkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0B426537BDC000F72DB /* AuthNetworkmanager.swift */; };
+		8DCBD0B826537BE5000F72DB /* AuthNetworkManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBD0B726537BE5000F72DB /* AuthNetworkManagerImpl.swift */; };
 		8DE011C4263D471800BED729 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE011C3263D471800BED729 /* UIViewExtension.swift */; };
 		8DE0C0CD263EFCC8002AAD98 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0C0CC263EFCC8002AAD98 /* IntExtension.swift */; };
 		8DF46BBE263D5B9900382B14 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF46BBC263D5B9900382B14 /* TransactionCell.swift */; };
@@ -33,22 +39,28 @@
 		0406AFE2C7666D9F6D39B971 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		24A3A90735D7A4D2D1A17E7A /* Pods-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.debug.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.debug.xcconfig"; sourceTree = "<group>"; };
 		7CEEA12F873FBD13C8EF5941 /* Pods_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D1997EA263E7F8C00AA1F84 /* TransactionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionEntity.swift; sourceTree = "<group>"; };
+		8D45E57D2654026B00CC750A /* BalanceNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		8D45E5832654058600CC750A /* TransactionEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionEntity.swift; sourceTree = "<group>"; };
 		8D48BB24263D9A69002C996E /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
 		8D5F1D52263D385D0027B199 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5F1D55263D385D0027B199 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		8D5F1D56263D385D0027B199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D6177F3263EDA5400FAE5A6 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		8D6177FE263EDDF300FAE5A6 /* LoginDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataResponse.swift; sourceTree = "<group>"; };
-		8D617824263EDFE300FAE5A6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		8D61783B263EE28700FAE5A6 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		8D61783E263EE32100FAE5A6 /* NetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerImpl.swift; sourceTree = "<group>"; };
-		8D61786F263EE8C000FAE5A6 /* HomeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeApi.swift; sourceTree = "<group>"; };
 		8D617873263EE95900FAE5A6 /* GetBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBalanceResponse.swift; sourceTree = "<group>"; };
 		8D617877263EE96300FAE5A6 /* GetBalanceDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBalanceDataResponse.swift; sourceTree = "<group>"; };
 		8D61787B263EEF7000FAE5A6 /* GetInvoiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInvoiceResponse.swift; sourceTree = "<group>"; };
 		8D61787E263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInvoiceDataResponse.swift; sourceTree = "<group>"; };
 		8D7210F0263FB29D009C05B1 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		8D7F561526554A5B004E2905 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		8DCBD0A2265376F9000F72DB /* BalanceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceApi.swift; sourceTree = "<group>"; };
+		8DCBD0A626537771000F72DB /* InvoiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceApi.swift; sourceTree = "<group>"; };
+		8DCBD0AB265377ED000F72DB /* InvoiceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManager.swift; sourceTree = "<group>"; };
+		8DCBD0AE26537812000F72DB /* InvoiceNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceNetworkManagerImpl.swift; sourceTree = "<group>"; };
+		8DCBD0B126537932000F72DB /* BalanceNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceNetworkManager.swift; sourceTree = "<group>"; };
+		8DCBD0B426537BDC000F72DB /* AuthNetworkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkmanager.swift; sourceTree = "<group>"; };
+		8DCBD0B726537BE5000F72DB /* AuthNetworkManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkManagerImpl.swift; sourceTree = "<group>"; };
 		8DE011C3263D471800BED729 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		8DE0C0CC263EFCC8002AAD98 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		8DF46BBC263D5B9900382B14 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
@@ -86,10 +98,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8D1997E9263E7F8100AA1F84 /* Entity */ = {
+		8D45E5822654058600CC750A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				8D1997EA263E7F8C00AA1F84 /* TransactionEntity.swift */,
+				8D45E5832654058600CC750A /* TransactionEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -108,6 +120,7 @@
 			children = (
 				8D48BB24263D9A69002C996E /* UserDefaultHelper.swift */,
 				8D7210F0263FB29D009C05B1 /* AppConstant.swift */,
+				8D7F561526554A5B004E2905 /* AppRouter.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -147,10 +160,9 @@
 		8D6177F2263EDA2A00FAE5A6 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				8D61786E263EE8B400FAE5A6 /* Home */,
+				8DCBD09E265376D3000F72DB /* Invoice */,
+				8DCBD09D265376C6000F72DB /* Balance */,
 				8D6177F7263EDB4A00FAE5A6 /* Auth */,
-				8D617824263EDFE300FAE5A6 /* NetworkManager.swift */,
-				8D61783E263EE32100FAE5A6 /* NetworkManagerImpl.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -160,6 +172,8 @@
 			children = (
 				8D6177F9263EDDDE00FAE5A6 /* Response */,
 				8D6177F3263EDA5400FAE5A6 /* AuthApi.swift */,
+				8DCBD0B426537BDC000F72DB /* AuthNetworkmanager.swift */,
+				8DCBD0B726537BE5000F72DB /* AuthNetworkManagerImpl.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -173,33 +187,53 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
-		8D61786E263EE8B400FAE5A6 /* Home */ = {
+		8D6178A5263EF8EB00FAE5A6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8D617872263EE94B00FAE5A6 /* Response */,
-				8D61786F263EE8C000FAE5A6 /* HomeApi.swift */,
+				8D45E5822654058600CC750A /* Entity */,
+				8D6177F2263EDA2A00FAE5A6 /* Network */,
 			);
-			path = Home;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		8D617872263EE94B00FAE5A6 /* Response */ = {
+		8DCBD09D265376C6000F72DB /* Balance */ = {
 			isa = PBXGroup;
 			children = (
-				8D617873263EE95900FAE5A6 /* GetBalanceResponse.swift */,
-				8D617877263EE96300FAE5A6 /* GetBalanceDataResponse.swift */,
+				8DCBD0A1265376E0000F72DB /* Response */,
+				8DCBD0A2265376F9000F72DB /* BalanceApi.swift */,
+				8DCBD0B126537932000F72DB /* BalanceNetworkManager.swift */,
+				8D45E57D2654026B00CC750A /* BalanceNetworkManagerImpl.swift */,
+			);
+			path = Balance;
+			sourceTree = "<group>";
+		};
+		8DCBD09E265376D3000F72DB /* Invoice */ = {
+			isa = PBXGroup;
+			children = (
+				8DCBD09F265376D7000F72DB /* Response */,
+				8DCBD0A626537771000F72DB /* InvoiceApi.swift */,
+				8DCBD0AB265377ED000F72DB /* InvoiceNetworkManager.swift */,
+				8DCBD0AE26537812000F72DB /* InvoiceNetworkManagerImpl.swift */,
+			);
+			path = Invoice;
+			sourceTree = "<group>";
+		};
+		8DCBD09F265376D7000F72DB /* Response */ = {
+			isa = PBXGroup;
+			children = (
 				8D61787B263EEF7000FAE5A6 /* GetInvoiceResponse.swift */,
 				8D61787E263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
 		};
-		8D6178A5263EF8EB00FAE5A6 /* Data */ = {
+		8DCBD0A1265376E0000F72DB /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				8D1997E9263E7F8100AA1F84 /* Entity */,
-				8D6177F2263EDA2A00FAE5A6 /* Network */,
+				8D617873263EE95900FAE5A6 /* GetBalanceResponse.swift */,
+				8D617877263EE96300FAE5A6 /* GetBalanceDataResponse.swift */,
 			);
-			path = Data;
+			path = Response;
 			sourceTree = "<group>";
 		};
 		8DE011BE263D441900BED729 /* Component */ = {
@@ -327,21 +361,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D61787C263EEF7000FAE5A6 /* GetInvoiceResponse.swift in Sources */,
-				8D617825263EDFE300FAE5A6 /* NetworkManager.swift in Sources */,
 				8D6177F4263EDA5400FAE5A6 /* AuthApi.swift in Sources */,
 				8DE011C4263D471800BED729 /* UIViewExtension.swift in Sources */,
+				8DCBD0A726537771000F72DB /* InvoiceApi.swift in Sources */,
+				8DCBD0B226537932000F72DB /* BalanceNetworkManager.swift in Sources */,
+				8D45E57E2654026B00CC750A /* BalanceNetworkManagerImpl.swift in Sources */,
 				8D617874263EE95900FAE5A6 /* GetBalanceResponse.swift in Sources */,
+				8DCBD0B526537BDC000F72DB /* AuthNetworkmanager.swift in Sources */,
 				8D48BB25263D9A69002C996E /* UserDefaultHelper.swift in Sources */,
-				8D61783F263EE32100FAE5A6 /* NetworkManagerImpl.swift in Sources */,
+				8DCBD0B826537BE5000F72DB /* AuthNetworkManagerImpl.swift in Sources */,
 				8D7210F1263FB29D009C05B1 /* AppConstant.swift in Sources */,
+				8DCBD0AF26537812000F72DB /* InvoiceNetworkManagerImpl.swift in Sources */,
 				8D61783C263EE28700FAE5A6 /* LoginResponse.swift in Sources */,
-				8D1997EB263E7F8C00AA1F84 /* TransactionEntity.swift in Sources */,
+				8DCBD0AC265377ED000F72DB /* InvoiceNetworkManager.swift in Sources */,
+				8DCBD0A3265376F9000F72DB /* BalanceApi.swift in Sources */,
 				8D6177FF263EDDF300FAE5A6 /* LoginDataResponse.swift in Sources */,
 				8DF46BBE263D5B9900382B14 /* TransactionCell.swift in Sources */,
 				8DE0C0CD263EFCC8002AAD98 /* IntExtension.swift in Sources */,
+				8D7F561626554A5B004E2905 /* AppRouter.swift in Sources */,
+				8D45E5842654058600CC750A /* TransactionEntity.swift in Sources */,
 				8D61787F263EEF7900FAE5A6 /* GetInvoiceDataResponse.swift in Sources */,
 				8D617878263EE96300FAE5A6 /* GetBalanceDataResponse.swift in Sources */,
-				8D617870263EE8C000FAE5A6 /* HomeApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

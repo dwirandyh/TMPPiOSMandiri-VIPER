@@ -12,14 +12,14 @@ class HistoryInteractorImpl: HistoryInteractor {
 
     var interactorOutput: HistoryInteractorOutput?
 
-    let networkManager: NetworkManager
+    let invoiceNetworkManager: InvoiceNetworkManager
 
-    init(networkManager: NetworkManager) {
-        self.networkManager = networkManager
+    init(networkManager: InvoiceNetworkManager) {
+        self.invoiceNetworkManager = networkManager
     }
 
     func getHistory() {
-        self.networkManager.getAllInvoice { (data, error) in
+        self.invoiceNetworkManager.getAllInvoice { (data, error) in
             var transactions: [TransactionEntity] = []
 
             data?.forEach({ (invoiceData) in

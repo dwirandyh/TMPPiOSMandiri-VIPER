@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public protocol BalanceNetworkManager {
+    func getBalance(completion: @escaping (GetBalanceDataResponse?, Error?) -> ())
+}

@@ -8,5 +8,7 @@
 import Foundation
 
 public class AppConstant {
-    public static var baseUrl: String = "http://3.84.177.160:8000"
+    public static var baseUrl: String {
+        return Bundle.main.infoDictionary?["BASE_URL"] as? String ?? ""
+    }
 }

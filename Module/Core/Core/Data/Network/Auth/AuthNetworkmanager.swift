@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public protocol AuthNetworkManger {
+    func login(email: String, password: String, completion: @escaping (LoginDataResponse?, Error?) -> ())
+}

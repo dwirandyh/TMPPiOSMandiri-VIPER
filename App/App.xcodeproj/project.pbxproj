@@ -12,6 +12,8 @@
 		8D1F9340263D368200244B6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1F933F263D368200244B6C /* SceneDelegate.swift */; };
 		8D1F9347263D368300244B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F9346263D368300244B6C /* Assets.xcassets */; };
 		8D1F934A263D368300244B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1F9348263D368300244B6C /* LaunchScreen.storyboard */; };
+		8D7F562326554CBB004E2905 /* History.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7F562226554CBB004E2905 /* History.framework */; };
+		8D7F562426554CBC004E2905 /* History.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D7F562226554CBB004E2905 /* History.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DAF54EB26403AF500CF67CB /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAF54EA26403AF500CF67CB /* Login.framework */; };
 		8DAF54EC26403AF500CF67CB /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAF54EA26403AF500CF67CB /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DAF54EF26403AF900CF67CB /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DAF54EE26403AF900CF67CB /* Home.framework */; };
@@ -30,6 +32,7 @@
 				8DAF54EC26403AF500CF67CB /* Login.framework in Embed Frameworks */,
 				8DAF54F326403AFC00CF67CB /* Core.framework in Embed Frameworks */,
 				8DAF54F026403AF900CF67CB /* Home.framework in Embed Frameworks */,
+				8D7F562426554CBC004E2905 /* History.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +51,7 @@
 		8D45E58726540F2800CC750A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		8D45E58826540F3400CC750A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		8D48BB28263D9B9B002C996E /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7F562226554CBB004E2905 /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8502DD264035B600F210B5 /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAF54EA26403AF500CF67CB /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAF54EE26403AF900CF67CB /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +69,7 @@
 				8DAF54EB26403AF500CF67CB /* Login.framework in Frameworks */,
 				284B1364BC56DA06C2827687 /* Pods_App.framework in Frameworks */,
 				8DAF54EF26403AF900CF67CB /* Home.framework in Frameworks */,
+				8D7F562326554CBB004E2905 /* History.framework in Frameworks */,
 				8DAF54F226403AFC00CF67CB /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +80,7 @@
 		1E046CE31FCE1EA28E3EAD9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D7F562226554CBB004E2905 /* History.framework */,
 				8DAF54F126403AFC00CF67CB /* Core.framework */,
 				8DAF54EE26403AF900CF67CB /* Home.framework */,
 				8DAF54EA26403AF500CF67CB /* Login.framework */,

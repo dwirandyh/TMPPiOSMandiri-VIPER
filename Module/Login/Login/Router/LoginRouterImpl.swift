@@ -15,7 +15,7 @@ public class LoginRouterImpl {
         let bundle = Bundle(identifier: "com.casestudy.Login")
         let vc = LoginViewController(nibName: "LoginViewController", bundle: bundle)
 
-        let networkManager = NetworkManagerImpl()
+        let networkManager = AuthNetworkManagerImpl()
 
         let router = LoginRouterImpl()
         let interactor = LoginInteractorImpl(networkManager: networkManager)
